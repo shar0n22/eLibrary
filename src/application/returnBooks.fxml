@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.returnControl">
+   <children>
+      <Label layoutX="285.0" layoutY="14.0" text="Return Book" textFill="RED">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Pane layoutX="50.0" layoutY="97.0" prefHeight="78.0" prefWidth="710.0" style="-fx-background-color: cyan;">
+         <children>
+            <Label layoutX="34.0" layoutY="26.0" text="User ID">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="434.0" layoutY="26.0" text="Book ID">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ruid" layoutX="139.0" layoutY="27.0" promptText="Enter user id" />
+            <TextField fx:id="rbid" layoutX="527.0" layoutY="27.0" promptText="Enter book id" />
+         </children>
+      </Pane>
+      <Button fx:id="rreturn" layoutX="84.0" layoutY="200.0" mnemonicParsing="false" onAction="#rreturn" prefHeight="33.0" prefWidth="68.0" style="-fx-background-color: #32CD32;" text="Return" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="rback" layoutX="656.0" layoutY="200.0" mnemonicParsing="false" onAction="#rback" prefHeight="33.0" prefWidth="68.0" style="-fx-background-color: red;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="243.0" layoutY="261.0" text="Search">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rsearch" layoutX="347.0" layoutY="262.0" promptText="Enter your userid" />
+      <TableView fx:id="sftable" layoutX="50.0" layoutY="305.0" prefHeight="253.0" prefWidth="710.0">
+        <columns>
+          <TableColumn fx:id="sfuid" prefWidth="75.0" text="User ID" />
+          <TableColumn fx:id="sfbid" prefWidth="75.0" text="Book ID" />
+            <TableColumn fx:id="sfname" prefWidth="404.0000305175781" text="Book Name" />
+            <TableColumn fx:id="sfauthor" minWidth="0.0" prefWidth="154.39996337890625" text="Author" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

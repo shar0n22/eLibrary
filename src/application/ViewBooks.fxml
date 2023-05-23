@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewControl">
+   <children>
+      <TableView fx:id="btable" layoutX="2.0" layoutY="1.0" prefHeight="407.0" prefWidth="600.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="bid" text="Book ID" />
+          <TableColumn fx:id="bname" prefWidth="298.4000244140625" text="Book Name" />
+            <TableColumn fx:id="bauthor" minWidth="0.0" prefWidth="120.0" text="Author" />
+            <TableColumn fx:id="byear" prefWidth="99.99996948242188" text="Year Published" />
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="46.0" layoutY="433.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="59.0" style="-fx-background-color: red;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
